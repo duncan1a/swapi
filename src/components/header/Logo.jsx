@@ -62,6 +62,12 @@ const Logo = () => (
      />
   	</g>
   </g>
+  <defs>
+    <filter id="turb">
+      <feTurbulence baseFrequency="0.3" numOctaves="2" />
+      <feDisplacementMap in="SourceGraphic" scale="5" />
+    </filter>
+  </defs>
   </svg>
 
 )

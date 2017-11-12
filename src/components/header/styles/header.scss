@@ -12,19 +12,21 @@ header{
   text-align: center;
 
   .logo{
-    height:52px;
-    width:200px;
+    height:64px;
+    width:126;
+    filter: url('#turb');
     path{
-     fill: #ffe81f ;
-     transition: fill .5s ;
+     fill: #fff;
+     transition: fill 3s ;
    }
   }
 
   &:hover{
     .logo{
       path{
-       fill: #fff ;
-     }
+       fill: #ffe81f ;
+      }
+      filter: none;
     }
   }
 }
