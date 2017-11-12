@@ -1,0 +1,33 @@
+@import "./_vars.scss";
+
+table{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-collapse: collapse;
+  th, td{
+    padding: $gutter;
+  }
+  th{
+    font-weight: bold;
+    text-align: left;
+    h2{
+      border-top: 1px dashed #ddd;
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  table {width:100%;}
+  th {
+    display: block;
+    padding-top: 8px !important;
+    text-align: left;
+  }
+   td {
+     display: block;
+     text-align:left;
+   }
+
+}

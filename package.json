@@ -1,0 +1,31 @@
+{
+  "name": "swapi",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "watch-css": "node-sass-chokidar src/ -o src/ --watch --recursive --include-path ./node_modules",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@material/button": "^0.24.0",
+    "@material/card": "^0.24.0",
+    "@material/elevation": "^0.1.13",
+    "@material/textfield": "^0.24.0",
+    "@material/typography": "^0.3.0",
+    "node-sass-chokidar": "0.0.3",
+    "prop-types": "^15.6.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "whatwg-fetch": "^2.0.3"
+  }
+}

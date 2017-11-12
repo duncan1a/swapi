@@ -1,0 +1,30 @@
+@import "../../../styles/_vars.scss";
+@import "@material/typography/mixins";
+@import "@material/elevation/mdc-elevation.scss";
+
+
+header{
+  @include mdc-elevation(4);
+  @include mdc-typography(title);
+  padding: $padding;
+  background-color: #555;
+  display: relative;
+  text-align: center;
+
+  .logo{
+    height:52px;
+    width:200px;
+    path{
+     fill: #ffe81f ;
+     transition: fill .5s ;
+   }
+  }
+
+  &:hover{
+    .logo{
+      path{
+       fill: #fff ;
+     }
+    }
+  }
+}
