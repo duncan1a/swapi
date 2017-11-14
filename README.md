@@ -1,5 +1,5 @@
 # SWAPI app
-Demo at
+Demo at  https://swapi-28e2a.firebaseapp.com
 
 ## Approach
 The app is build with create-react-app
