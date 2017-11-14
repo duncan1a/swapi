@@ -31,9 +31,16 @@ const Home = ({ people, planets, setPlanet }) => {
           return  d.homeworld
         },
       'Cell': d => {
-          return planets[d.row.planet] ? <a className="link" onClick={() => {
-            setPlanet(d.row.planet)
-          }} >{planets[d.row.planet].name}</a> : '...'
+          if(planets[d.row.planet]){
+            // don't link if unknown
+            return  planets[d.row.planet].name === "unknown" ? planets[d.row.planet].name : (
+              <a className="link" onClick={() => {
+                setPlanet(d.row.planet)
+              }} >{planets[d.row.planet].name}</a>
+            )
+          }
+          // hasn't loaded yet
+          return '...'
         },
       'filterMethod': planetFilter
       },
