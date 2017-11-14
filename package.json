@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-table": "^6.7.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,6 +21,8 @@
     "@material/elevation": "^0.1.13",
     "@material/textfield": "^0.24.0",
     "@material/typography": "^0.3.0",
+    "match-sorter": "^2.0.2",
+    "moment": "^2.19.2",
     "node-sass-chokidar": "0.0.3",
     "prop-types": "^15.6.0",
     "react-redux": "^5.0.6",

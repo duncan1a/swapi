@@ -14,7 +14,8 @@ header{
   .logo{
     height:64px;
     width:126;
-    filter: url('#turb');
+    // apply the chalk filter from the Logo.jsx component
+    filter: url('#chalk');
     path{
      fill: #fff;
      transition: fill 3s ;

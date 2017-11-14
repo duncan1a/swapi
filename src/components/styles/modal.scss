@@ -1,0 +1,54 @@
+@import "@material/elevation/mdc-elevation.scss";
+
+.modal{
+  position: relative;
+  background: #fff;
+  width:90%;
+  padding: 24px 16px;
+  border-radius: 4px;
+  margin: 16px;
+  max-width: 800px;
+  @include mdc-elevation(6);
+  animation: modal-appear 0.25s;
+  .back{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.backdrop{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  animation: backdrop-appear 0.25s;
+}
+
+
+@keyframes modal-appear {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes backdrop-appear {
+    from {
+      opacity: 0;
+
+    }
+    to {
+      opacity: 1;
+
+    }
+}

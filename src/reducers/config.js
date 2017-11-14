@@ -7,6 +7,7 @@ export default function config(state = {}, action) {
 		case types.SET_STORE_VERSION:
       // this version is used to clear the offline store if necessary
 			return {...state, version: action.payload}
+		
 
 		default:
 			return state;

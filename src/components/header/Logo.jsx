@@ -63,10 +63,10 @@ const Logo = () => (
   	</g>
   </g>
   <defs>
-    <filter id="turb">
-      <feTurbulence baseFrequency="0.3" numOctaves="2" />
-      <feDisplacementMap in="SourceGraphic" scale="5" />
-    </filter>
+  <filter id="chalk">
+    <feTurbulence baseFrequency="0.8" numOctaves="10" />
+    <feDisplacementMap in="SourceGraphic" scale="4" />
+  </filter>
   </defs>
   </svg>
 

@@ -1,4 +1,26 @@
 @import "./_vars.scss";
+@import "@material/typography/mixins";
+@import "@material/elevation/mdc-elevation.scss";
+
+
+.ReactTable{
+  max-width: 900px;
+  margin: 16px auto;
+  text-align: left;
+  @include mdc-typography(body1);
+  @include mdc-elevation(2);
+  border: none;
+  border-radius: 2px;
+  background-color: #fff;
+  .rt-thead{
+    background-color: #444;
+    color: #fff;
+    &.-header{
+      border-radius: 2px 2px 0 0;
+    }
+  }
+}
+
 
 table{
   padding: 0;
