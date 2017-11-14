@@ -1,21 +1,21 @@
+// This is the modal popup for a planet
+
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CloseImg from '../images/close.svg'
 import './styles/modal.css'
 
 const Modal = ({setPlanet, planet }) => {
-  console.log('modal!');
   const back = (e) => {
-    setPlanet(null)
+    setPlanet(null) // close the modal by nulling the planet
   }
   return (
     <div
       onClick={back}
-      className="backdrop"
-    >
+      className="backdrop">
       <div className='modal'>
       <Link className="back" onClick={back} to="/"><img src={CloseImg} alt="Back" /></Link>
-        
+
         <h1 className="mdc-card__title mdc-card__title--large">{planet.name}</h1>
           <section className="mdc-card__supporting-text">
             Page: <Link to={`/planet?url=${planet.url}`} >/planet?url={planet.url}</Link>

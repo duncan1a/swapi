@@ -1,3 +1,5 @@
+// planet page
+
 import React from 'react'
 import { Link } from 'react-router-dom'
 import BackImg from '../images/back.svg'

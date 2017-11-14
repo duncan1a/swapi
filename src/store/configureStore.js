@@ -10,7 +10,7 @@ export default function configureStore(initialState) {
 	const store = createStore(reducer, initialState, compose(
 		applyMiddleware(thunkMiddleware)
 	));
-  // enableredux devtool for development
+  // enabler edux devtool for development
   const devStore = createStore(reducer, initialState, compose(
 		applyMiddleware(thunkMiddleware),
 		window.devToolsExtension ? window.devToolsExtension() : f => f

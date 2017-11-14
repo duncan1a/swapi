@@ -7,7 +7,7 @@ const initialState = loadState(config);
 const store = configureStore(initialState);
 
 store.subscribe(() => {
-	// persist your state
+	// persist the state
 	saveState(store.getState())
 })
 

@@ -5,6 +5,8 @@ export const loadState = (config) => {
 	try {
 		const serialisedState = localStorage.getItem('state');
 		const parsedState = JSON.parse(serialisedState);
+
+		// clear the local store if version has changed
 		if (parsedState.version < config.store_version) {
 			localStorage.removeItem('state');
 			return undefined
