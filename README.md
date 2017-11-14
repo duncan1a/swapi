@@ -1,24 +1,24 @@
-### SWAPI app
-Demo at 
+# SWAPI app
+Demo at
 
 ## Approach
 The app is build with create-react-app
 Styles are managed with scss, mainly because I can import material components web scss.
 
-# Offline
+## Offline
 The app uses redux and syncs the redux store with localStorage. This means that the app has to get the data on the first load, but after that can start up with offline data. Combining this with service workers means that the app can load entirely offline and subsequent loads load in 0.1s to 0.2s.
 
-# Getting data
+## Getting data
 I chose to get all people and planets data. To do this I loop through the pagination of each until they're all received.
 This means that I can match the planet names to the people.
 
-# Table
+### Table
 The table columns are filterable by text. This allows you to filter just 'Skywalkers', for example.
 
-# Popup
+### Popup
 The popup also links to a planets page
 
-## Data structure
+### Data structure
 I chose to structure planets data as an indexed object because there are many lookups for planet names and this makes thos lookups much faster.
 
 ## Title SVG
