@@ -100,7 +100,7 @@ class App extends React.Component {
     const url = new URLSearchParams(location.search).get('url') // needed to look up a planet
 
     return (
-      <div className="App mdc-typography--body2">
+      <div className={"App mdc-typography--body2 "+ (planet && 'blur')}>
         <Header />
         <Switch >
           <Route exact path='/' render={() => <Home planets={planets} people={values(people)} setPlanet={this.setPlanet} />} />

@@ -67,6 +67,9 @@ const Logo = () => (
     <feTurbulence baseFrequency="0.8" numOctaves="10" />
     <feDisplacementMap in="SourceGraphic" scale="4" />
   </filter>
+  <filter id="blur" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
   </defs>
   </svg>
 
